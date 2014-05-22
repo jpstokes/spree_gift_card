@@ -1,0 +1,31 @@
+<div class='account-gift-cards'>
+  <h3>
+    <%= t(:my_gift_cards, scope: :gift_cards) %>
+  </h3>
+  <% if @gift_cards.present? %>
+    <table id='my-gift-cards'>
+      <thead>
+        <tr>
+          <th>
+            <%= t(:code, scope: :gift_cards) %>
+          </th>
+          <th>
+            <%= t(:card_value, scope: :gift_cards) %>
+          </th>
+          <th>
+            <%= t(:remaining_value, scope: :gift_cards) %>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render @gift_cards %>
+      </tbody>
+    </table>
+  <% else %>
+    <p>
+      <%= t(:no_gift_cards_yet, scope: :gift_cards) %>
+    </p>
+  <% end %>
+  <br/>
+</div>
+

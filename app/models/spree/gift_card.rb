@@ -20,6 +20,8 @@ module Spree
     before_validation :set_calculator, on: :create
     before_validation :set_values, on: :create
 
+    scope :by_email, ->(email) { where(email: email) }
+
     include Spree::Core::CalculatedAdjustments
 
     def apply(order)

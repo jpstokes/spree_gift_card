@@ -18,3 +18,10 @@ en:
     successfully_created_gift_card: 'You have successfully created the gift card.'
     transactions: "Transactions"
     value: 'Value'
+  gift_cards:
+    card_value: Card Credit
+    code: Card Code
+    my_gift_cards: My Gift Cards
+    no_gift_cards_yet: You don't have any gift card yet
+    remaining_value: Remaining Credit
+
