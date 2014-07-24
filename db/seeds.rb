@@ -13,4 +13,5 @@ if Spree::Product.gift_cards.count == 0
     product.variants << variant
   end
   product.save
+  product.set_backorderable
 end
