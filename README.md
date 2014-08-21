@@ -16,7 +16,7 @@ Requirements
 Installation
 ============
 
-1. Add `gem 'spree_gift_card', github: 'jpstokes/spree_gift_card'` to Gemfile
+1. Add `gem 'spree_gift_card', git: 'git@github.com:jpstokes/spree_gift_card'` to Gemfile
 1. Run `bundle`
 1. Run `rails g spree_gift_card:install`
 1. Run `rails g spree_gift_card:seed`
